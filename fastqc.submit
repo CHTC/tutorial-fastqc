@@ -1,0 +1,22 @@
+# HTCondor Submit File: fastqc.submit
+
+# Provide our executable and arguments
+executable = fastqc.sh
+# arguments = $(Process)
+
+# List files that need to be transferred to the job
+transfer_input_files = data/SRR2584863_1.trim.sub.fastq, jre1.8.0_381, 
+should_transfer_files = YES
+
+# Track job information
+log = fastqc.log
+output = fastqc.out
+error = fastqc.err
+
+# Resource Requests
+request_cpus = 1
+request_memory = 1GB
+request_disk = 1GB
+
+# Tell HTCondor to run our job once:
+queue 1
