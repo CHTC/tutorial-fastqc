@@ -2,16 +2,24 @@
 
 # Provide our executable and arguments
 executable = fastqc.sh
-# arguments = $(Process)
+arguments = SRR2584863_1.trim.sub.fastq
+
+# Provide the container for our software
+universe    = container
+container_image = software/fastqc.sif
 
 # List files that need to be transferred to the job
-transfer_input_files = data/SRR2584863_1.trim.sub.fastq, jre1.8.0_381, 
+transfer_input_files = data/SRR2584863_1.trim.sub.fastq
 should_transfer_files = YES
 
+# Tell HTCondor to transfer output to our /results directory
+#transfer_output_files = SRR2584863_1.trim.sub_fastq.html
+#transfer_output_remaps = "SRR2584863_1.trim.sub_fastq.html = /results/SRR2584863_1.trim.sub_fastq.html"
+
 # Track job information
-log = fastqc.log
-output = fastqc.out
-error = fastqc.err
+log = logs/fastqc.log
+output = logs/fastqc.out
+error = logs/fastqc.err
 
 # Resource Requests
 request_cpus = 1
