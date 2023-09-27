@@ -13,13 +13,13 @@ transfer_input_files = data/$(sample).trim.sub.fastq
 should_transfer_files = YES
 
 # Tell HTCondor to transfer output to our /results directory
-#transfer_output_files = $(sample).trim.sub_fastq.html
-#transfer_output_remaps = “$(sample).trim.sub_fastq.html = results/$(sample).trim.sub_fastq.html"
+transfer_output_files = $(sample).trim.sub_fastqc.html
+transfer_output_remaps = "$(sample).trim.sub_fastqc.html = results/$(sample).trim.sub_fastqc.html"
 
 # Track job information
-log = logs/$(sample).fastqc.log
-output = logs/$(sample).fastqc.out
-error = logs/$(sample).fastqc.err
+log = logs/fastqc.log
+output = logs/fastqc.out
+error = logs/fastqc.err
 
 # Resource Requests
 request_cpus = 1
@@ -28,4 +28,3 @@ request_disk = 1GB
 
 # Tell HTCondor to run our job once:
 queue sample from list_of_samples.txt
-
