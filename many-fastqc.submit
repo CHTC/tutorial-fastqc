@@ -17,9 +17,9 @@ transfer_output_files = $(sample).trim.sub_fastqc.html
 transfer_output_remaps = "$(sample).trim.sub_fastqc.html = results/$(sample).trim.sub_fastqc.html"
 
 # Track job information
-log = logs/fastqc.log
-output = logs/fastqc.out
-error = logs/fastqc.err
+log = logs/$(sample).fastqc.log
+output = logs/$(sample).fastqc.out
+error = logs/$(sample).fastqc.err
 
 # Resource Requests
 request_cpus = 1
