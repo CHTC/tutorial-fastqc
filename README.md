@@ -182,12 +182,6 @@ And then submit many jobs using this single submit file!
 condor_submit many-fastqc.submit
 ```
 
-    Submitting job(s)
-    ERROR: store_cred of LOCAL credential failed - Operation failed
-
-
-
-
 Notice that using a **single submit file**, we now have **multiple jobs in the queue**.
 
 We can check on the status of our multiple jobs in HTCondor's queue by using:
@@ -199,6 +193,8 @@ condor_q
 
 When ready, we can check our results in our `results/` directory:
 
+```bash
 ls results/
+```
 
 Congratulations on finishing the first step of a sequencing analysis pipeline!
