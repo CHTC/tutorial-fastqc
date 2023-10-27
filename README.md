@@ -73,7 +73,7 @@ Let's take a look at our executable, `fastqc.sh`:
 cat fastqc.sh
 ```
 
-# Step 4: Prepare HTCondor Submit File to Run One Job
+## Step 4: Prepare HTCondor Submit File to Run One Job
 
 Now we create our HTCondor submit file, which tells HTCondor what to run and how many resources to make available to our job:
 
