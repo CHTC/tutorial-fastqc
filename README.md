@@ -217,7 +217,7 @@ For many files, it will be easiest to create a compressed tarball (.tar.gz file)
 
 An example of this could be `scp -r username@ap40.uw.osg-htc.org:/home/username/results ./`
 
-Now, open the .html on your local computer. 
+Now, open the `.html` files using your internet browser on your local computer. 
 
 **Congratulations on finishing the first step of a sequencing analysis pipeline!**
 
