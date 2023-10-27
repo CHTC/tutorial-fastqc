@@ -16,6 +16,7 @@ pwd
 
 We should see `/home/<username>/tutorial-fastqc`.
 
+
 ## Step 1: Download data
 
 First, we need to download our sequencing data to that we want to analyze for our research project. For this tutorial, we will be downloading data used in the Data Carpentry workshop. This data includes both the genome of Escherichia coli (E. coli) and paired-end RNA sequencing reads obtained from a study carried out by Blount et al. published in [PNAS](http://www.pnas.org/content/105/23/7899). Additional information about how the data was modified in preparation for this analysis can be found on the [Data Carpentry's workshop website](https://datacarpentry.org/wrangling-genomics/aio.html).
@@ -28,6 +29,7 @@ We have a script called `download_data.sh` that will download our bioinformatic 
 ```
 
 Our sequencing data files, all ending in .fastq, can now be found in a folder called /data. 
+
 
 ## Step 2: Prepare software
 
@@ -62,6 +64,7 @@ Instead, we will download our ready-to-go apptainer .sif file:
 ls software/
 ```
 
+
 ## Step 3: Prepare an Executable
 
 We need to create an executable to pass to our HTCondor jobs, so that HTCondor knows what to run on our behalf. 
@@ -72,7 +75,7 @@ Let's take a look at our executable, `fastqc.sh`:
 ```bash
 cat fastqc.sh
 ```
-
+<br/><br/>
 ## Step 4: Prepare HTCondor Submit File to Run One Job
 
 Now we create our HTCondor submit file, which tells HTCondor what to run and how many resources to make available to our job:
@@ -81,6 +84,7 @@ Now we create our HTCondor submit file, which tells HTCondor what to run and how
 ```bash
 cat fastqc.submit
 ```
+
 
 ## Step 5: Submit One HTCondor Job and Check Results
 
@@ -112,7 +116,8 @@ It's always good practice to look at our standard error, standard out, and HTCon
 ls logs/
 ```
 
-## Step 5: Scale Out Your Analysis
+
+## Step 6: Scale Out Your Analysis
 
 ### Create A List of All Files We Want Analyzed
 
@@ -197,7 +202,8 @@ When ready, we can check our results in our `results/` directory:
 ls results/
 ```
 
-## Step 6: Return the output to your local computer
+
+## Step 7: Return the output to your local computer
 
 Once you are done with your computational analysis, you will want to move the results to your local computer or to a long term storage location.
 
@@ -219,5 +225,4 @@ An example of this could be `scp -r username@ap40.uw.osg-htc.org:/home/username/
 
 Now, open the `.html` files using your internet browser on your local computer. 
 
-**Congratulations on finishing the first step of a sequencing analysis pipeline!**
-
+###**Congratulations on finishing the first step of a sequencing analysis pipeline!**
