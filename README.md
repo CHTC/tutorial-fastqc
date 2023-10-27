@@ -2,13 +2,20 @@
 
 The first step of most biofinformatic analyses is to assess the quality of the data you have recieved. In this example, we are working with real DNA sequencing data from a research project studying E. coli. We will use a common software, [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), to assess the quality of the data.  
 
-Before we start, let us make sure we are in out `tutorial-fastqc` directory by printing our working directory:
+Before we start, let us download the materials for this tutorial if we don't already have them: 
+
+```bash
+git clone https://github.com/OSGConnect/tutorial-fastqc
+```
+
+Then let's navigate inside the `tutorial-fastqc` directory:
 
 
 ```bash
 cd ~/tutorial-fastqc
 ```
 
+We can confirm our location by printing our working directory using `pwd`:
 
 ```bash
 pwd
