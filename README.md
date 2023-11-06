@@ -224,7 +224,7 @@ cd ~/Downloads
 Then use `scp` ("secure copy") command to copy our results folder and it's contents:
 
 ```bash
-scp -r username@hostname:/home/username/folder ./
+scp -r username@hostname:/home/username/tutorial-fastqc/results ./
 ```
 For many files, it will be easiest to create a compressed tarball (.tar.gz file) of your files and transfer that instead of each file individually.
 
