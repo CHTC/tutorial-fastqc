@@ -196,5 +196,26 @@ When ready, we can check our results in our `results/` directory:
 ```bash
 ls results/
 ```
+## Step 7: Return the output to your local computer
 
-Congratulations on finishing the first step of a sequencing analysis pipeline!
+Once you are done with your computational analysis, you will want to move the results to your local computer or to a long term storage location.
+
+Let's practice copying our `.html` files to our local laptop. 
+
+First, open a new terminal. Do not log into your OSPool account. Instead, navigate to where you want the files to go on your computer. We will store them in our `Downloads` folder. 
+
+```bash
+cd ~/Downloads
+```
+Then use `scp` ("secure copy") command to copy our results folder and it's contents:
+
+```bash
+scp -r username@hostname:/home/username/tutorial-fastqc/results ./
+```
+For many files, it will be easiest to create a compressed tarball (.tar.gz file) of your files and transfer that instead of each file individually.
+
+An example of this could be `scp -r username@ap40.uw.osg-htc.org:/home/username/results ./`
+
+Now, open the `.html` files using your internet browser on your local computer. 
+
+###**Congratulations on finishing the first step of a sequencing analysis pipeline!**
