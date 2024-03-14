@@ -1,3 +1,8 @@
+---
+ospool:
+    path: software_examples/bioinformatics/tutorial-fastqc/README.md
+---
+
 # Bioinformatics Tutorial: Quality Assessment of Data with FastQC
 
 The first step of most biofinformatic analyses is to assess the quality of the data you have recieved. In this example, we are working with real DNA sequencing data from a research project studying E. coli. We will use a common software, [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), to assess the quality of the data.  
