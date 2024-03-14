@@ -232,4 +232,4 @@ An example of this could be `scp -r username@ap40.uw.osg-htc.org:/home/username/
 
 Now, open the `.html` files using your internet browser on your local computer. 
 
-###**Congratulations on finishing the first step of a sequencing analysis pipeline!**
+### **Congratulations on finishing the first step of a sequencing analysis pipeline!**
