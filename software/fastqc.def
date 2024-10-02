@@ -1,6 +1,10 @@
 Bootstrap: docker
 From: continuumio/miniconda3:24.3.0-0
 
+# Created by Patricia Tran
+# https://orcid.org/0000-0003-3948-3938
+# https://github.com/UW-Madison-Bacteriology-Bioinformatics/chtc-containers
+
 %post
     conda install bioconda::fastqc
     pip install multiqc
