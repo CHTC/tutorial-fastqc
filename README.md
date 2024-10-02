@@ -213,8 +213,6 @@ When ready, we can check our results in our `results/` directory:
 ```bash
 ls results/
 ```
-
-
 ## Step 7: Return the output to your local computer
 
 Once you are done with your computational analysis, you will want to move the results to your local computer or to a long term storage location.
