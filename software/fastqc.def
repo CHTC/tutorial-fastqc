@@ -1,2 +1,6 @@
 Bootstrap: docker
-From: staphb/fastqc
+From: continuumio/miniconda3:24.3.0-0
+
+%post
+    conda install bioconda::fastqc
+    pip install multiqc
